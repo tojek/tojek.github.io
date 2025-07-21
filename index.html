@@ -3,67 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Morgana Art - Gothic Art Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="vignette"></div>
     <header>
-        <h1>Welcome to My Profile</h1>
-        <div>
-
+        <div class="logo">
+            <h1>Morgana Art</h1>
         </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active" data-i18n="nav_home">Home</a></li>
+                <li><a href="gallery.html" data-i18n="nav_gallery">Gallery</a></li>
+                <li><a href="about.html" data-i18n="nav_about">About</a></li>
+                <li><a href="shop.html" data-i18n="nav_shop">Shop</a></li>
+                <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <div class="wrapper">
-        <section id="photo-section">
-            <img src="DUnicorn.jpg" alt="Dark Unicorn">
-        </section>
-        <section>
-            <h2>About Me</h2>
-            <div class="par">
-                <p>Hi!<br>My name is Mateusz
-                I'm a student at 42<br>
-                The goal of this page is to be as useful as it can be for my daily use hub<br>
-                I want to integrate it as much as possible with my Notion<br>
-                Feel free to check out my repositories and projects<br>
-                Enjoy your stay!</p>
-            </div> 
-        </section>
-
-        <section>
-            <h2>My Repositories that I'm currently working on</h2>
-            <ul>
-                <li><a href="https://github.com/DarkUnicorn42/push_swap" target="_blank">push_swap</a></li>
-                <!-- Add more list items for each repository -->
-            </ul>
-        </section>
-        
-        <section>
-            <h2>My Projects</h2>
-            <a href="https://quark-hyssop-039.notion.site/a20c9b6f058a496089c5d2bedd1efb6c?v=a71e4509a2dd4d1588d8c3970f716022" target="_blank">Check out my project timeframe</a>
-        </section>
-
-        <section>
-            <h2>Latest idea:</h2>
-            <p>
-                <a href="https://quark-hyssop-039.notion.site/App-for-social-42-0ccac03f293e431dbce22be88c18b513" target="_blank">App for social 42</a>
-            </p>
-        </section>
-
-        <section>
-            <h2>Recipe book:</h2>
-            <p>
-                <a href="https://quark-hyssop-039.notion.site/22d1f734bd66447292fe588e5353da02?v=bf3cf482ec354ee19ab3e3e84936adef&pvs=4" target="_blank">Recipe book</a>
-            </p>
-        </section>
+    <main class="home-main">
+        <div class="hero" style="background-image: url('images/wetransfer_20230210_182554-jpg_2025-07-11_1358/paint_face.jpeg');">
+            <div class="hero-content">
+                <h2 data-i18n="hero_title">Visions from the Shadows</h2>
+                <p data-i18n="hero_subtitle">A collection of gothic artwork exploring the boundaries between beauty and darkness</p>
+                <a href="gallery.html" class="cta-button" data-i18n="cta_button">Enter Gallery</a>
+            </div>
         </div>
+
+        <section class="featured-works">
+            <h3 data-i18n="featured_works">Featured Works</h3>
+            <div class="featured-grid">
+                <div class="featured-item">
+                    <div class="featured-image">
+                        <img src="images/wetransfer_1000045940-jpg_2025-07-11_1356/paint_scull.jpg" alt="Whispers of the Forgotten">
+                        <div class="image-caption" data-i18n="whispers">Whispers of the Forgotten</div>
+                    </div>
+                </div>
+                <div class="featured-item">
+                    <div class="featured-image">
+                        <img src="images/wetransfer_1000045940-jpg_2025-07-11_1356/paint_moon.jpg" alt="Crimson Tears">
+                        <div class="image-caption" data-i18n="crimson">Crimson Tears</div>
+                    </div>
+                </div>
+                <div class="featured-item">
+                    <div class="featured-image">
+                        <img src="images/wetransfer_1000045940-jpg_2025-07-11_1356/draw_ship.jpg" alt="The Raven's Dream">
+                        <div class="image-caption" data-i18n="raven">The Raven's Dream</div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <!-- Add your footer content here -->
+        <div class="footer-content">
+            <div class="footer-logo">Morgana Art</div>
+            <div class="social-links">
+                <a href="#" class="social-icon">Instagram</a>
+                <a href="#" class="social-icon">TikTok</a>
+                <a href="#" class="social-icon">DeviantArt</a>
+            </div>
+            <div class="copyright" data-i18n="copyright">
+                &copy; 2025 Morgana Art. All rights reserved.
+            </div>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

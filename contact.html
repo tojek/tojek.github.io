@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Morgana Art</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="vignette"></div>
+    <header>
+        <div class="logo">
+            <h1>Morgana Art</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="gallery.html" data-i18n="nav_gallery">Gallery</a></li>
+                <li><a href="about.html" data-i18n="nav_about">About</a></li>
+                <li><a href="shop.html" data-i18n="nav_shop">Shop</a></li>
+                <li><a href="contact.html" class="active" data-i18n="nav_contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h2 data-i18n="contact_title">Contact & Commissions</h2>
+            <p class="contact-intro" data-i18n="contact_desc">For inquiries about commissioned work, exhibitions, or collaborations, please reach out through the form below or via my social media channels.</p>
+
+            <div class="contact-container">
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name" data-i18n="name">Name</label>
+                            <input type="text" id="name" name="name" required data-i18n-placeholder="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-i18n="email">Email</label>
+                            <input type="email" id="email" name="email" required data-i18n-placeholder="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" data-i18n="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required data-i18n-placeholder="subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-i18n="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required data-i18n-placeholder="message"></textarea>
+                        </div>
+                        <button type="submit" class="contact-button" data-i18n="send_message">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h3 data-i18n="follow_connect">Follow & Connect</h3>
+                        <ul class="social-list">
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">TikTok</a></li>
+                            <li><a href="#">DeviantArt</a></li>
+                            <li><a href="#">ArtStation</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="info-item">
+                        <h3 data-i18n="commission_process">Commission Process</h3>
+                        <p data-i18n="commission_desc">For custom commissions, please include the following details in your message:</p>
+                        <ul>
+                            <li data-i18n="concept_theme">Concept or theme</li>
+                            <li data-i18n="size_medium">Desired size and medium</li>
+                            <li data-i18n="timeline">Timeline considerations</li>
+                            <li data-i18n="budget">Budget range</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Morgana Art</div>
+            <div class="social-links">
+                <a href="#" class="social-icon">Instagram</a>
+                <a href="#" class="social-icon">TikTok</a>
+                <a href="#" class="social-icon">DeviantArt</a>
+            </div>
+            <div class="copyright" data-i18n="copyright">
+                &copy; 2025 Morgana Art. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Morgana Art</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="vignette"></div>
+    <header>
+        <div class="logo">
+            <h1>Morgana Art</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="gallery.html" data-i18n="nav_gallery">Gallery</a></li>
+                <li><a href="about.html" data-i18n="nav_about">About</a></li>
+                <li><a href="shop.html" class="active" data-i18n="nav_shop">Shop</a></li>
+                <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="shop-intro">
+            <h2 data-i18n="shop_title">Artifacts & Prints</h2>
+            <p data-i18n="shop_desc">Bring a piece of the darkness home. Each print is carefully produced to capture the full depth and atmosphere of the original artwork.</p>
+        </section>
+
+        <section class="shop-items">
+            <div class="shop-grid">
+                <div class="shop-item">
+                    <div class="shop-image">
+                        <img src="images/wetransfer_1000045940-jpg_2025-07-11_1356/paint_creature.jpg" alt="Midnight Bloom">
+                    </div>
+                    <div class="shop-details">
+                        <h3 data-i18n="midnight_bloom">Midnight Bloom</h3>
+                        <p class="shop-description" data-i18n="shop_desc_limited">Limited edition giclée print on archival paper.</p>
+                        <p class="shop-price" data-i18n="shop_price">$45.00</p>
+                        <div class="shop-options">
+                            <select name="size" id="size1">
+                                <option value="8x10">8" x 10"</option>
+                                <option value="11x14">11" x 14"</option>
+                                <option value="16x20">16" x 20"</option>
+                            </select>
+                            <button class="shop-button" data-i18n="add_to_cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-item">
+                    <div class="shop-image">
+                        <img src="images/wetransfer_1000045940-jpg_2025-07-11_1356/paint_scull2.jpg" alt="Ossuary Dreams">
+                    </div>
+                    <div class="shop-details">
+                        <h3 data-i18n="ossuary_dreams">Ossuary Dreams</h3>
+                        <p class="shop-description" data-i18n="shop_desc_signed">Signed print on premium matte paper.</p>
+                        <p class="shop-price" data-i18n="shop_price_2">$50.00</p>
+                        <div class="shop-options">
+                            <select name="size" id="size2">
+                                <option value="8x10">8" x 10"</option>
+                                <option value="11x14">11" x 14"</option>
+                                <option value="16x20">16" x 20"</option>
+                            </select>
+                            <button class="shop-button" data-i18n="add_to_cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-item">
+                    <div class="shop-image">
+                        <img src="images/wetransfer_1000045940-jpg_2025-07-11_1356/draw_sword.jpg" alt="Seraphic Remains">
+                    </div>
+                    <div class="shop-details">
+                        <h3 data-i18n="seraphic_remains">Seraphic Remains</h3>
+                        <p class="shop-description" data-i18n="shop_desc_museum">Museum-quality canvas print, stretched and ready to hang.</p>
+                        <p class="shop-price" data-i18n="shop_price_3">$120.00</p>
+                        <div class="shop-options">
+                            <select name="size" id="size3">
+                                <option value="12x16">12" x 16"</option>
+                                <option value="18x24">18" x 24"</option>
+                                <option value="24x36">24" x 36"</option>
+                            </select>
+                            <button class="shop-button" data-i18n="add_to_cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shop-item">
+                    <div class="shop-image">
+                        <img src="images/wetransfer_1000045940-jpg_2025-07-11_1356/draw_ship.jpg" alt="The Raven's Dream">
+                    </div>
+                    <div class="shop-details">
+                        <h3 data-i18n="raven">The Raven's Dream</h3>
+                        <p class="shop-description" data-i18n="shop_desc_book">Limited edition art book featuring a collection of works.</p>
+                        <p class="shop-price" data-i18n="shop_price_4">$75.00</p>
+                        <div class="shop-options">
+                            <button class="shop-button" data-i18n="add_to_cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="shop-info">
+            <div class="info-box">
+                <h3 data-i18n="shipping_info">Shipping Information</h3>
+                <p data-i18n="shipping_desc">All prints are carefully packaged to ensure they arrive in perfect condition. Please allow 5-7 business days for processing and shipping.</p>
+            </div>
+            <div class="info-box">
+                <h3 data-i18n="custom_orders">Custom Orders</h3>
+                <p data-i18n="custom_orders_desc">For commissioned pieces or special requests, please visit the <a href="contact.html">Contact page</a> to discuss your vision.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Morgana Art</div>
+            <div class="social-links">
+                <a href="#" class="social-icon">Instagram</a>
+                <a href="#" class="social-icon">TikTok</a>
+                <a href="#" class="social-icon">DeviantArt</a>
+            </div>
+            <div class="copyright" data-i18n="copyright">
+                &copy; 2025 Morgana Art. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
