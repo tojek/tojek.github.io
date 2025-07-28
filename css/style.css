@@ -565,6 +565,23 @@ select {
     background-color: var(--color-accent);
 }
 
+.service-link {
+    padding: 0.5rem 1.5rem;
+    background-color: var(--color-burgundy);
+    color: var(--color-text);
+    border: none;
+    font-family: var(--font-title);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.service-link:hover {
+    background-color: var(--color-accent);
+}
+
 .shop-info {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -836,4 +853,41 @@ footer {
     .hero-content h2 {
         font-size: 2rem;
     }
+}
+
+/* Price Table Styles */
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  background: rgba(44, 27, 54, 0.85);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+}
+.price-table th, .price-table td {
+  padding: 1rem 1.2rem;
+  text-align: left;
+}
+.price-table th {
+  background: var(--color-burgundy);
+  color: var(--color-text);
+  font-family: var(--font-title);
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  border-bottom: 2px solid var(--color-accent);
+}
+.price-table tr {
+  border-bottom: 1px solid rgba(192,192,192,0.08);
+}
+.price-table td {
+  color: var(--color-silver);
+  font-size: 1rem;
+}
+.price-table tr:last-child {
+  border-bottom: none;
+}
+.price-table tbody tr:hover {
+  background: rgba(80, 7, 36, 0.15);
+  transition: background 0.2s;
 }
