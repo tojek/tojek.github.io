@@ -32,10 +32,26 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add parallax effect to hero section
     const hero = document.querySelector('.hero');
     if (hero) {
-        window.addEventListener('scroll', () => {
-            const scrollPosition = window.scrollY;
-            hero.style.backgroundPositionY = `${scrollPosition * 0.5}px`;
-        });
+        // Remove previous scroll event to avoid double movement
+        // Use CSS background-attachment: fixed for desktop, fallback to JS for mobile if needed
+        function setHeroParallax() {
+            if (window.innerWidth > 900) {
+                hero.style.backgroundAttachment = 'fixed';
+                hero.style.backgroundPosition = 'center center';
+                window.removeEventListener('scroll', hero._parallaxHandler || (()=>{}));
+            } else {
+                hero.style.backgroundAttachment = 'scroll';
+                // For mobile, use a subtle parallax
+                const handler = () => {
+                    const scrollPosition = window.scrollY;
+                    hero.style.backgroundPosition = `center ${scrollPosition * 0.2}px`;
+                };
+                window.addEventListener('scroll', handler);
+                hero._parallaxHandler = handler;
+            }
+        }
+        setHeroParallax();
+        window.addEventListener('resize', setHeroParallax);
     }
 
     // Gallery image click to enlarge
