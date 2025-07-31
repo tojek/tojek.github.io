@@ -8,11 +8,16 @@ const translations = {
         'nav_gallery': 'Gallery',
         'nav_about': 'About',
         'nav_shop': 'Shop',
+        'nav_pricing': 'Pricing',
         'nav_contact': 'Contact',
 
         // Home page
         'hero_title': 'Visions from the Shadows',
         'hero_subtitle': 'A collection of gothic artwork exploring the boundaries between beauty and darkness',
+        'hero_gallery_title': 'Explore Gallery',
+        'hero_gallery_subtitle': 'Discover my collection of gothic artwork',
+        'hero_pricing_title': 'Commission Pricing',
+        'hero_pricing_subtitle': 'View pricing for custom artwork and services',
         'cta_button': 'Enter Gallery',
         'featured_works': 'Featured Works',
         'whispers': 'Whispers of the Forgotten',
@@ -73,6 +78,10 @@ const translations = {
         'custom_orders': 'Custom Orders',
         'custom_orders_desc': 'For commissioned pieces or special requests, please visit the Contact page to discuss your vision.',
 
+        // Pricing page
+        'pricing_title': 'Pricing',
+        'pricing_desc': 'Explore our pricing for creative services. Click on a category to see details and rates.',
+
         // Contact page
         'contact_title': 'Contact & Commissions',
         'contact_desc': 'For inquiries about commissioned work, exhibitions, or collaborations, please reach out through the form below or via my social media channels.',
@@ -98,11 +107,16 @@ const translations = {
         'nav_gallery': 'Galeria',
         'nav_about': 'O mnie',
         'nav_shop': 'Sklep',
+        'nav_pricing': 'Cennik',
         'nav_contact': 'Kontakt',
 
         // Home page
         'hero_title': 'Wizje z cieni',
         'hero_subtitle': 'Kolekcja gotyckiej sztuki eksplorująca granice między pięknem a ciemnością',
+        'hero_gallery_title': 'Odkryj Galerię',
+        'hero_gallery_subtitle': 'Poznaj moją kolekcję gotyckiej sztuki',
+        'hero_pricing_title': 'Cennik Zleceń',
+        'hero_pricing_subtitle': 'Zobacz ceny niestandardowych dzieł sztuki i usług',
         'cta_button': 'Wejdź do galerii',
         'featured_works': 'Wyróżnione prace',
         'whispers': 'Szepty zapomnianych',
@@ -162,6 +176,10 @@ const translations = {
         'shipping_desc': 'Wszystkie printy są starannie pakowane, aby zapewnić ich dotarcie w idealnym stanie. Proszę uwzględnić 5-7 dni roboczych na przetworzenie i wysyłkę.',
         'custom_orders': 'Zamówienia niestandardowe',
         'custom_orders_desc': 'W sprawie zamówionych dzieł lub specjalnych próśb, odwiedź stronę Kontakt, aby omówić swoją wizję.',
+
+        // Pricing page
+        'pricing_title': 'Cennik',
+        'pricing_desc': 'Poznaj nasze ceny usług kreatywnych. Kliknij kategorię, aby zobaczyć szczegóły i stawki.',
 
         // Contact page
         'contact_title': 'Kontakt i zlecenia',
@@ -223,8 +241,7 @@ function switchLanguage() {
 document.addEventListener('DOMContentLoaded', function() {
     // Add language toggle button if it doesn't exist
     if (!document.getElementById('language-toggle')) {
-        const header = document.querySelector('header');
-        const nav = document.querySelector('nav');
+        const nav = document.querySelector('nav ul');
 
         const langToggle = document.createElement('button');
         langToggle.id = 'language-toggle';
@@ -232,7 +249,10 @@ document.addEventListener('DOMContentLoaded', function() {
         langToggle.textContent = currentLang === 'en' ? 'Polski' : 'English';
         langToggle.addEventListener('click', switchLanguage);
 
-        header.insertBefore(langToggle, nav.nextSibling);
+        // Create a list item for the language toggle
+        const langLi = document.createElement('li');
+        langLi.appendChild(langToggle);
+        nav.appendChild(langLi);
     }
 
     // Translate the page
