@@ -146,7 +146,7 @@ const translations = {
         'digital_illustration': 'Ilustracja cyfrowa, 2023',
 
         // About page
-        'about_artist': 'O artystce',
+        'about_artist': 'O mnie',
         'about_p1': 'Nazywam się Morgana i od kilku lat zajmuję się malarstwem oraz charakteryzacją. Sztuka to dla mnie nie tylko zawód, ale przede wszystkim pasja i sposób wyrażania siebie. Tworzenie to moja największa miłość – każda praca, nad którą się pochylam, to nie tylko projekt, ale osobista historia i emocja, którą chcę przekazać.',
         'about_p2': 'Najbliżej mi do mrocznego fantasy – kocham tworzyć światy pełne cieni, magii i tajemnic. Inspiruję się mitologią, baśniami i mrokiem, który często skrywa się pod powierzchnią rzeczywistości. W swoich pracach łączę klasyczne techniki z własną wyobraźnią i wrażliwością.',
         'about_p3': 'Na co dzień współpracuję z klientami o bardzo różnych potrzebach – maluję ilustracje, portrety, projekty koncepcyjne oraz wykonuję charakteryzacje. Jestem otwarta na różnorodne style i tematy, a każdy projekt traktuję indywidualnie – z pełnym zaangażowaniem i dbałością o najdrobniejsze szczegóły. Wierzę, że to właśnie detale budują klimat i sprawiają, że prace zaczynają żyć własnym życiem.',
